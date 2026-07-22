@@ -1450,51 +1450,18 @@ class _GreetingFormState extends State<GreetingForm> {
 ```
 ```
 Dashboard
+
 <img width="401" height="911" alt="image" src="https://github.com/user-attachments/assets/ab5827ae-0479-4b63-b5c4-0d36b192240b" />
+```
 Counter
+```
 <img width="405" height="915" alt="image" src="https://github.com/user-attachments/assets/7691ca04-988e-42c0-9cd7-77d357077f05" />
+```
 From
+```
 <img width="401" height="919" alt="image" src="https://github.com/user-attachments/assets/b68190c9-7b04-45d2-8c78-6efa65426f23" />
 
 ```
----
-
-### การทดลองที่ 8 — Hot Reload vs Hot Restart
-
-**⏱ เวลา:** 10 นาที
-
-**ขั้นตอนที่ 1** กดปุ่ม `+` ใน Counter Tab หลายครั้งจนถึง 15
-
-**ขั้นตอนที่ 2** ไปที่ไฟล์ `main.dart` แก้สีใน `MyApp`:
-
-```dart
-// เปลี่ยน
-colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
-// เป็น
-colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-```
-
-**ขั้นตอนที่ 3** บันทึก → **Hot Reload** อัตโนมัติ
-
-**ขั้นตอนที่ 4** บันทึกผลในตาราง:
-
-| | หลัง Hot Reload |
-|--|--|
-| สี Theme | |
-| ค่า Counter | |
-
-**ขั้นตอนที่ 5** กด **Hot Restart** (พิมพ์ `R` ใน Terminal หรือกด 🔄)
-
-| | หลัง Hot Restart |
-|--|--|
-| สี Theme | |
-| ค่า Counter | |
-
-**ขั้นตอนที่ 6** อธิบายผลลัพธ์:
-
-> Hot Reload: สี __________ Counter __________ เพราะ __________
-> Hot Restart: สี __________ Counter __________ เพราะ __________
-
 ---
 
 ### 🎯 โจทย์ฝึกทำ — ขยาย App ด้วยตนเอง
@@ -1509,8 +1476,9 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 ```
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
 ```
-
+```
 <img width="403" height="921" alt="image" src="https://github.com/user-attachments/assets/4e9960a9-5b4b-463c-a0ce-0f992cdb83e0" />
+
 <img width="398" height="919" alt="image" src="https://github.com/user-attachments/assets/94963871-c924-4771-83e0-4d2f2b9a9a08" />
 
 ```
@@ -1521,100 +1489,34 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 ### คำถามท้ายใบงาน
 
 **ข้อ 1** ทำไม Flutter ถึงเลือกวาด UI ด้วย Engine ของตัวเองแทนการใช้ Native Component? มีข้อดีและข้อเสียอย่างไร?
+
 ตอบ Flutter ใช้ Engine ของตัวเองเพื่อให้ UI เหมือนกันทุกแพลตฟอร์ม
 ข้อดี: ควบคุม UI ได้ดี ทำงานหลายแพลตฟอร์มได้ง่าย
 ข้อเสีย: ขนาดแอปใหญ่ขึ้น และเข้าถึง Native บางอย่างได้ยาก
 
 **ข้อ 2** อธิบายความสัมพันธ์ของ Widget Tree, Element Tree และ RenderObject Tree และเหตุผลที่ต้องมีทั้ง 3 ส่วน
+
 ตอบ Widget Tree: โครงสร้าง UI ที่นักพัฒนาสร้าง
 Element Tree: ตัวเชื่อมระหว่าง Widget กับการแสดงผล
 RenderObject Tree: คำนวณขนาด ตำแหน่ง และวาด UI
 มีทั้ง 3 ส่วนเพื่อให้ Flutter จัดการ UI ได้รวดเร็ว
 
 **ข้อ 3** อธิบายโครงสร้าง Widget Tree และความสัมพันธ์ระหว่าง Parent-Child Widget 
+
 ตอบ Widget Tree เป็นโครงสร้างแบบ Parent-Child โดย Parent ควบคุมการจัดวาง และ Child แสดงผลภายใน Parent
+
 **ข้อ 4** จากการทดลองที่ 4 ข้อ F (ลบ setState ออก) ผลที่เกิดขึ้นคืออะไร และอธิบายเหตุผลเชิงเทคนิคว่าทำไมจึงเกิดผลนั้น
+
 ตอบ เมื่อเอา setState() ออก ค่าเปลี่ยนแต่หน้าจอไม่เปลี่ยน เพราะ Flutter ไม่ได้รับแจ้งให้เรียก build() ใหม่
+
 **ข้อ 5** เมื่อออกแบบ Flutter App ที่มี Widget หลายตัว จะตัดสินใจอย่างไรว่า Widget ไหนควรเป็น Stateless และ Widget ไหนควรเป็น Stateful? ยกตัวอย่างจากใบงานนี้
+
 ตอบ StatelessWidget: ใช้กับข้อมูลที่ไม่เปลี่ยน เช่น InfoCard, AboutPage
 StatefulWidget: ใช้กับข้อมูลที่เปลี่ยน เช่น CounterSection, ClockWidget, GreetingForm
+
 **ข้อ 6** เหตุใดจึงต้องเรียก `dispose()` และยกเลิก Timer ใน `ClockWidget`? หากไม่ทำจะเกิดอะไรขึ้นในระยะยาว?
+
 ตอบ ต้องใช้ dispose() เพื่อคืนทรัพยากรและยกเลิก Timer เมื่อ Widget ถูกปิด หากไม่ทำอาจเกิด Memory Leak และ Error จาก Timer ที่ยังทำงานอยู่
----
-
-## ข้อผิดพลาดที่พบบ่อยใน Flutter
-
-| อาการ | สาเหตุที่เป็นไปได้ | วิธีแก้ |
-|---|---|---|
-| UI ไม่อัปเดตเมื่อค่าเปลี่ยน | ลืม `setState()` | ห่อโค้ดด้วย `setState(() { ... })` |
-| `setState() after dispose()` | ไม่ check `mounted` | เพิ่ม `if (mounted)` ก่อน `setState` |
-| Widget ล้นหน้าจอ | Column ไม่มี Scroll | ห่อด้วย `SingleChildScrollView` |
-| `TextEditingController` Warning | ลืม dispose | เพิ่ม `controller.dispose()` ใน `dispose()` |
-| Hot Reload ไม่เห็นผล | แก้ `initState()` หรือ `main()` | ใช้ Hot Restart แทน |
-| `No connected devices` | ไม่ได้เปิด Emulator | เปิด Emulator ก่อนรัน `flutter run` |
-| `pub get` failed | Package ใน pubspec.yaml ผิด | ตรวจ indent และชื่อ Package |
 
 ---
 
-## ภาคผนวก A — ติดตั้ง Flutter SDK (ถ้ายังไม่ได้ติดตั้ง)
-
-### Windows
-
-```bash
-# 1. ดาวน์โหลด Flutter SDK จาก https://flutter.dev/docs/get-started/install/windows
-# 2. แตกไฟล์ไปที่ C:\flutter (ห้ามวางใน C:\Program Files)
-# 3. เพิ่ม C:\flutter\bin ใน PATH Environment Variable
-# 4. ติดตั้ง Android SDK Command-line Tools
-#    Android Studio → SDK Manager → SDK Tools → Android SDK Command-line Tools ✓
-# 5. ยอมรับ License
-flutter doctor --android-licenses
-# 6. ตรวจสอบ
-flutter doctor
-```
-
-### macOS
-
-```bash
-# 1. ติดตั้ง Homebrew (ถ้ายังไม่มี)
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# 2. ติดตั้ง Flutter
-brew install --cask flutter
-
-# 3. ยอมรับ License
-flutter doctor --android-licenses
-
-# 4. ตรวจสอบ
-flutter doctor
-```
-
----
-
-## ภาคผนวก B — สร้าง Android Emulator ด้วย Command Line (ไม่ใช้ Android Studio)
-
-```bash
-# 1. ตรวจสอบ System Images ที่ดาวน์โหลดไว้
-sdkmanager --list | grep system-images
-
-# 2. ดาวน์โหลด System Image (ถ้ายังไม่มี)
-sdkmanager "system-images;android-34;google_apis;x86_64"
-
-# 3. สร้าง Emulator ใหม่
-avdmanager create avd \
-  --name "Pixel6_API34" \
-  --package "system-images;android-34;google_apis;x86_64" \
-  --device "pixel_6"
-
-# 4. เปิด Emulator
-emulator -avd Pixel6_API34 &
-
-# 5. ตรวจสอบ
-flutter devices
-```
-
-> **ทาง Windows:** เปิด Command Prompt แบบ Administrator แล้วรันคำสั่งเดิม (ไม่มี `&` ท้าย)
-
----
-
-*ใบงานการทดลองที่ 2-2 | Flutter Framework Basics*
-*วิชา: การพัฒนาซอฟต์แวร์สำหรับอุปกรณ์เคลื่อนที่*
