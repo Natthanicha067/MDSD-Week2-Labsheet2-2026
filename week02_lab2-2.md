@@ -1502,12 +1502,22 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 เลือกทำอย่างน้อย **2 ข้อ** จากโจทย์ด้านล่าง:
 
 **โจทย์ A (ง่าย):** เพิ่ม Tab ที่ 4 ชื่อ "About" แสดงชื่อ รหัสนักศึกษา และคณะของตัวเอง พร้อมรูป Avatar (ใช้ `CircleAvatar` กับ Text แรกของชื่อ)
-
-**โจทย์ B (กลาง):** ใน Counter Page เพิ่ม History ที่บันทึกทุกการกระทำ (เพิ่ม/ลด/Reset) พร้อมเวลา เช่น "14:30:25 — เพิ่ม 5 (รวม: 15)" แสดงเป็น List ด้านล่าง Counter และมีปุ่ม "ล้าง History"
-
+บันทึกผลการทดลอง
+```
+```
+<img width="398" height="914" alt="image" src="https://github.com/user-attachments/assets/b3f730c9-3154-47a2-957b-755fbeadad87" />
+```
+```
+```
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
+```
+บันทึกผลการทดลอง
+```
+```
+<img width="403" height="921" alt="image" src="https://github.com/user-attachments/assets/4e9960a9-5b4b-463c-a0ce-0f992cdb83e0" />
+<img width="398" height="919" alt="image" src="https://github.com/user-attachments/assets/94963871-c924-4771-83e0-4d2f2b9a9a08" />
 
-**โจทย์ D (ยาก):** สร้าง Tab ใหม่ "Todo List" ที่มี TextField รับชื่องาน, ปุ่ม Add, รายการ Todo ที่กดติ๊กถูก/ลบได้ และแสดงจำนวนงานที่เหลือ
+```
 
 ---
 
