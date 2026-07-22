@@ -1477,6 +1477,7 @@ From
 ```
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
 ```
+บันทึกผลการทดลอง
 
 <img width="403" height="921" alt="image" src="https://github.com/user-attachments/assets/4e9960a9-5b4b-463c-a0ce-0f992cdb83e0" />
 
