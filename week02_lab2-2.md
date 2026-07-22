@@ -464,7 +464,9 @@ flutter run
 
 **บันทึกรูปผลการทดลอง**
 ```
-บันทึกรูปที่นี่
+```
+<img width="400" height="917" alt="image" src="https://github.com/user-attachments/assets/c1df8587-2d6c-4729-8bdd-fb912dca0434" />
+
 ```
 **✏️ ทดลองแก้ไข D:** ใน Row เพิ่ม Container D สีม่วง ขนาด 80×80 ต่อจาก C
 **บันทึกรูปผลการทดลอง**
