@@ -1503,17 +1503,13 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 
 **โจทย์ A (ง่าย):** เพิ่ม Tab ที่ 4 ชื่อ "About" แสดงชื่อ รหัสนักศึกษา และคณะของตัวเอง พร้อมรูป Avatar (ใช้ `CircleAvatar` กับ Text แรกของชื่อ)
 บันทึกผลการทดลอง
-```
-```
+
 <img width="398" height="914" alt="image" src="https://github.com/user-attachments/assets/b3f730c9-3154-47a2-957b-755fbeadad87" />
-```
-```
+
 ```
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
 ```
-บันทึกผลการทดลอง
-```
-```
+
 <img width="403" height="921" alt="image" src="https://github.com/user-attachments/assets/4e9960a9-5b4b-463c-a0ce-0f992cdb83e0" />
 <img width="398" height="919" alt="image" src="https://github.com/user-attachments/assets/94963871-c924-4771-83e0-4d2f2b9a9a08" />
 
@@ -1525,17 +1521,25 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 ### คำถามท้ายใบงาน
 
 **ข้อ 1** ทำไม Flutter ถึงเลือกวาด UI ด้วย Engine ของตัวเองแทนการใช้ Native Component? มีข้อดีและข้อเสียอย่างไร?
+ตอบ Flutter ใช้ Engine ของตัวเองเพื่อให้ UI เหมือนกันทุกแพลตฟอร์ม
+ข้อดี: ควบคุม UI ได้ดี ทำงานหลายแพลตฟอร์มได้ง่าย
+ข้อเสีย: ขนาดแอปใหญ่ขึ้น และเข้าถึง Native บางอย่างได้ยาก
 
 **ข้อ 2** อธิบายความสัมพันธ์ของ Widget Tree, Element Tree และ RenderObject Tree และเหตุผลที่ต้องมีทั้ง 3 ส่วน
+ตอบ Widget Tree: โครงสร้าง UI ที่นักพัฒนาสร้าง
+Element Tree: ตัวเชื่อมระหว่าง Widget กับการแสดงผล
+RenderObject Tree: คำนวณขนาด ตำแหน่ง และวาด UI
+มีทั้ง 3 ส่วนเพื่อให้ Flutter จัดการ UI ได้รวดเร็ว
 
 **ข้อ 3** อธิบายโครงสร้าง Widget Tree และความสัมพันธ์ระหว่าง Parent-Child Widget 
-
+ตอบ Widget Tree เป็นโครงสร้างแบบ Parent-Child โดย Parent ควบคุมการจัดวาง และ Child แสดงผลภายใน Parent
 **ข้อ 4** จากการทดลองที่ 4 ข้อ F (ลบ setState ออก) ผลที่เกิดขึ้นคืออะไร และอธิบายเหตุผลเชิงเทคนิคว่าทำไมจึงเกิดผลนั้น
-
+ตอบ เมื่อเอา setState() ออก ค่าเปลี่ยนแต่หน้าจอไม่เปลี่ยน เพราะ Flutter ไม่ได้รับแจ้งให้เรียก build() ใหม่
 **ข้อ 5** เมื่อออกแบบ Flutter App ที่มี Widget หลายตัว จะตัดสินใจอย่างไรว่า Widget ไหนควรเป็น Stateless และ Widget ไหนควรเป็น Stateful? ยกตัวอย่างจากใบงานนี้
-
+ตอบ StatelessWidget: ใช้กับข้อมูลที่ไม่เปลี่ยน เช่น InfoCard, AboutPage
+StatefulWidget: ใช้กับข้อมูลที่เปลี่ยน เช่น CounterSection, ClockWidget, GreetingForm
 **ข้อ 6** เหตุใดจึงต้องเรียก `dispose()` และยกเลิก Timer ใน `ClockWidget`? หากไม่ทำจะเกิดอะไรขึ้นในระยะยาว?
-
+ตอบ ต้องใช้ dispose() เพื่อคืนทรัพยากรและยกเลิก Timer เมื่อ Widget ถูกปิด หากไม่ทำอาจเกิด Memory Leak และ Error จาก Timer ที่ยังทำงานอยู่
 ---
 
 ## ข้อผิดพลาดที่พบบ่อยใน Flutter
