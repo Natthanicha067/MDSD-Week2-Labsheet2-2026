@@ -1452,13 +1452,13 @@ class _GreetingFormState extends State<GreetingForm> {
 Dashboard
 
 <img width="401" height="911" alt="image" src="https://github.com/user-attachments/assets/ab5827ae-0479-4b63-b5c4-0d36b192240b" />
-```
+
 Counter
-```
+
 <img width="405" height="915" alt="image" src="https://github.com/user-attachments/assets/7691ca04-988e-42c0-9cd7-77d357077f05" />
-```
+
 From
-```
+
 <img width="401" height="919" alt="image" src="https://github.com/user-attachments/assets/b68190c9-7b04-45d2-8c78-6efa65426f23" />
 
 ```
@@ -1469,6 +1469,7 @@ From
 เลือกทำอย่างน้อย **2 ข้อ** จากโจทย์ด้านล่าง:
 
 **โจทย์ A (ง่าย):** เพิ่ม Tab ที่ 4 ชื่อ "About" แสดงชื่อ รหัสนักศึกษา และคณะของตัวเอง พร้อมรูป Avatar (ใช้ `CircleAvatar` กับ Text แรกของชื่อ)
+```
 บันทึกผลการทดลอง
 
 <img width="398" height="914" alt="image" src="https://github.com/user-attachments/assets/b3f730c9-3154-47a2-957b-755fbeadad87" />
@@ -1476,7 +1477,7 @@ From
 ```
 **โจทย์ C (กลาง):** ใน Form Page เพิ่ม Dropdown เลือก "ภาษาของคำทักทาย" (ไทย / อังกฤษ / ญี่ปุ่น) และเปลี่ยนข้อความคำทักทายตามภาษาที่เลือก
 ```
-```
+
 <img width="403" height="921" alt="image" src="https://github.com/user-attachments/assets/4e9960a9-5b4b-463c-a0ce-0f992cdb83e0" />
 
 <img width="398" height="919" alt="image" src="https://github.com/user-attachments/assets/94963871-c924-4771-83e0-4d2f2b9a9a08" />
