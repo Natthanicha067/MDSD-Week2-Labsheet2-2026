@@ -1448,7 +1448,14 @@ class _GreetingFormState extends State<GreetingForm> {
 
 **บันทึกรูปผลการทดลอง**
 ```
-บันทึกรูปที่นี่
+```
+Dashboard
+<img width="401" height="911" alt="image" src="https://github.com/user-attachments/assets/ab5827ae-0479-4b63-b5c4-0d36b192240b" />
+Counter
+<img width="405" height="915" alt="image" src="https://github.com/user-attachments/assets/7691ca04-988e-42c0-9cd7-77d357077f05" />
+From
+<img width="401" height="919" alt="image" src="https://github.com/user-attachments/assets/b68190c9-7b04-45d2-8c78-6efa65426f23" />
+
 ```
 ---
 
