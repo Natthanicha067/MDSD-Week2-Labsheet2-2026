@@ -748,7 +748,11 @@ class _CounterSectionState extends State<CounterSection> {
 **ขั้นตอนที่ 3** บันทึกและทดลองกดปุ่ม +, -, Reset และสลับ Step
 **บันทึกรูปผลการทดลอง**
 ```
-บันทึกรูปที่นี่
+```
+<img width="401" height="922" alt="image" src="https://github.com/user-attachments/assets/1a248517-5311-404a-8cc1-070a5bb282d8" />
+<img width="400" height="913" alt="image" src="https://github.com/user-attachments/assets/5536b2bf-a70b-4a56-ba12-d058983c55ef" />
+<img width="396" height="915" alt="image" src="https://github.com/user-attachments/assets/d369843b-a30c-499d-aa66-be6d1ac33b56" />
+
 ```
 
 
@@ -758,7 +762,8 @@ class _CounterSectionState extends State<CounterSection> {
 
 **บันทึกรูปผลการทดลอง**
 ```
-บันทึกรูปที่นี่
+<img width="399" height="918" alt="image" src="https://github.com/user-attachments/assets/2fdbdfff-6208-40ea-91af-7b6c909c62ac" />
+
 ```
 ---
 
